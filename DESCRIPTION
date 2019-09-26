@@ -3,7 +3,7 @@ Type: Package
 Title: LiUR3-RC
 Version: 1.0
 Date: 2019-09-23
-Author: Jun Li, Dhyey Patel, Ismail Khalil
+Author: Jun Li
 Maintainer: Jun Li <junli559@student.liu.se>
 Description: A pilot project using RC class concept to carry out linear regression
 License: N/A

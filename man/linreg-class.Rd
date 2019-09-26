@@ -11,7 +11,7 @@
 \item{data, }{a data source used to train the model}
 }
 \value{
-a list of key results from regression, including Coefficients,FittedValues,Residuals,FreedomDegree,VarianceResiduals,StdErrorResidua#'         ls,VarianceCoefficients,StdError,Tcoefficients,Possibility,X,Y,Formula,Data,VariableNames
+a list of key results from regression, including Coefficients,FittedValues,Residuals,FreedomDegree,VarianceResiduals,StdErrorResiduals,VarianceCoefficients,StdError,Tcoefficients,Possibility,X,Y,Formula,Data,VariableNames
 }
 \description{
 Given \code{formula} and data source \code{data}, find the best fitted linear regression model.

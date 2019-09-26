@@ -1,6 +1,6 @@
 ---
 title: "FancyPackRLiU4"
-author: Jun Li, Dhyey Patel, Ismail Khalil
+author: Jun Li
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
