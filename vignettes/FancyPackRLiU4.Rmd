@@ -1,27 +1,50 @@
-# FancyPackRLiU4
+---
+title: "FancyPackRLiU4"
+author: Jun Li, Dhyey Patel, Ismail Khalil
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{FancyPackRLiU4}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
 
-Linreg RC class
+```{r, include = FALSE,warning=FALSE,}
+library(FancyPackRLiU4)
+```
 
 ## Description
 *linreg* is a pilot RC project to carry out linear regression. Given \code{formula} and data source \code{data}, it will find the best fitted linear regression model.
 
 ## Fields
 *formula*, a suggested linear regression model
+
 *data*, a data source used to train the model
+
 *guo*, a list of key results from regression, including Coefficients, FittedValues, Residuals, FreedomDegree, VarianceResiduals, StdErrorResiduals, VarianceCoefficients, StdError, Tcoefficients, Possibility, X, Y, Formula, Data, VariableNames.
 
 ## Methods
 print() print out the coefficients and coefficient names, similar as done by the lm class
+
 plot() plot the following two plots using ggplot2. Remember to include ggplot2 in your package
+
 resid() return the vector of residuals
+
 pred() return the predicted values
+
 coef() return the coefficients as a named vector
+
 summary() return a printout including the coefficients with their standard error, t-value and p-value as well as the standard error of  residuals and the degrees of freedom in the model.
 
 
-
-Pass status of Travis building:
-https://travis-ci.org/yewei369/FancyPack.R.LiU.3.svg?branch=master
-
-name<-"Jun Li"
-liuid<-"junli559"
+## Examples
+```{r setup, echo=TRUE}
+data(iris)
+a<-linreg$new(formula=Sepal.Length~Sepal.Width,data=iris)
+a$print()          
+a$plot()
+a$resid()
+a$pred()
+a$coef()
+a$summary()
+```
